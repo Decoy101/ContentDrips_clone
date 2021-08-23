@@ -96,19 +96,49 @@ h1{
     
     
 }
+.pic{
+    float:right;
+    width: 400px;
+    height: 200px;
+    border-radius: 40px;
+    background-image: url("assets/image_4.png");
+    background-size: cover;
+    transition: transform 0.5s;
+}
 .Container ul{
     font-size:1.5rem;
     line-height: 1.8;
 }
 .green{
     background-color: #A6FABF;
+    color:#25592C;
     
 }
+.green > .pic:hover{
+    transform:scale(1.3);
+}
+
 .blue{
     background-color:#A6F6FB ;
+    color:#1F4E51;
+}
+.blue > .pic{
+    background-image: url("assets/image_5.jpeg");
+   
+}
+.blue > .pic:hover{
+    transform:scale(1.3);
 }
 .lightGreen{
     background-color: #DBF4E7;
+    color: #40705B;
+}
+.lightGreen > .pic{
+    background-image: url("assets/image_6.jpeg");
+   
+}
+.lightGreen > .pic:hover{
+    transform:scale(1.3);
 }
 .red{
     justify-content: center;
@@ -184,16 +214,10 @@ h1{
 .shadow-lg{
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }
-.pic{
-    float:right;
-    width: 300px;
-    height: 200px;
-    border-radius: 40px;
-    background-image: url("assets/image_4.png");
-    background-size: cover;
-}
+
 .context{
     float:left;
+    width:50%;
 }
 /* bottom */
 .bottom{
@@ -206,7 +230,7 @@ h1{
 footer{
     background-color:white;
     margin-top:60px;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 
 .footer{
@@ -216,6 +240,48 @@ footer{
 #col-1{
     width:500px;
     font-size: 1.2em;
+    
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color:#F8F9FB;
+  
+    margin:2px;
+}
+
+#icons{
+    display:flex;
+    
+}
+#facebook{
+    background-image: url('assets/icons8-facebook-f.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#facebook:hover{
+    background-color:#54EDAC;
+    background-image:url('assets/icons8-facebook-f\ \(2\).svg');
+}
+#twitter{
+    background-image: url('assets/icons8-twitter\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#twitter:hover{
+    background-color:#54EDAC;
+    background-image:url('assets/icons8-twitter\ \(2\).svg');
+}
+#Youtube{
+    background-image: url('assets/icons8-youtube-play-button\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Youtube:hover{
+    background-color:#54EDAC;
+    background-image:url('assets/icons8-youtube-play-button\ \(1\).svg');
 }
 #col-3{
     width:300px;
@@ -225,8 +291,15 @@ footer ul{
     font-size: 1.2em;
     line-height: 1.9;
     color:grey;
+    
 }
-
+footer li{
+    text-decoration: underline 0.1em white;
+    text-underline-position:under;
+    transition: text-decoration-color 300ms;
+}
 footer li:hover{
     color:black;
+    text-decoration-color:cyan;
+    
 }
